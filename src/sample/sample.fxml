@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="CENTER_RIGHT" prefHeight="617.0" prefWidth="881.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="864.0">
+            <top>
+                <HBox alignment="CENTER" prefHeight="82.0" prefWidth="864.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label text="Arboles Binario">
+                            <font>
+                                <Font name="System Bold Italic" size="27.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+            </top>
+            <right>
+                <VBox prefHeight="304.0" prefWidth="74.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="PreOrdenBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="72.0" text="PreOrden">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="5.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="InOrdenBtn" mnemonicParsing="false" prefHeight="34.0" prefWidth="72.0" text="InOrden">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="PostOrdenBtn" mnemonicParsing="false" prefHeight="32.0" prefWidth="77.0" text="PostOrden">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="TamañoBtn" mnemonicParsing="false" prefHeight="38.0" prefWidth="76.0" text="Tamaño">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="MayorBtn" mnemonicParsing="false" prefHeight="36.0" prefWidth="77.0" text="Mayor">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="MenorBtn" mnemonicParsing="false" prefHeight="37.0" prefWidth="77.0" text="Menor">
+                            <VBox.margin>
+                                <Insets bottom="10.0" top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="BuscarBtn" mnemonicParsing="false" prefHeight="35.0" prefWidth="78.0" text="Buscar">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                    <BorderPane.margin>
+                        <Insets />
+                    </BorderPane.margin>
+                </VBox>
+            </right>
+            <bottom>
+                <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="TextLb" text="Label" />
+                    </children>
+                </HBox>
+            </bottom>
+            <center>
+                <Pane prefHeight="368.0" prefWidth="525.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="198.0" layoutY="2.0" text="8">
+                            <font>
+                                <Font size="31.0" />
+                            </font></Label>
+                        <Label layoutX="95.0" layoutY="66.0" text="7">
+                            <font>
+                                <Font size="31.0" />
+                            </font></Label>
+                        <Label layoutX="50.0" layoutY="135.0" text="3">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="132.0" layoutY="134.0" text="5">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="94.0" layoutY="228.0" text="6">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="178.0" layoutY="228.0" text="1">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="132.0" layoutY="314.0" text="10">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="206.0" layoutY="314.0" prefHeight="54.0" prefWidth="44.0" text="11">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="310.0" layoutY="66.0" text="9">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="250.0" layoutY="143.0" text="4">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="382.0" layoutY="143.0" text="2">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="325.0" layoutY="228.0" text="12">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="438.0" layoutY="228.0" text="22">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="124.0" layoutY="25.0" prefHeight="50.0" prefWidth="23.0" text="/">
+                            <font>
+                                <Font size="32.0" />
+                            </font></Label>
+                        <Label layoutX="60.0" layoutY="89.0" text="/">
+                            <font>
+                                <Font size="38.0" />
+                            </font></Label>
+                        <Label layoutX="128.0" layoutY="85.0" text="\\">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="104.0" layoutY="181.0" text="/">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="174.0" layoutY="181.0" text="\\">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="164.0" layoutY="267.0" text="/">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="208.0" layoutY="267.0" text="\\">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="279.0" layoutY="25.0" text="\\">
+                            <font>
+                                <Font size="34.0" />
+                            </font></Label>
+                        <Label layoutX="278.0" layoutY="93.0" text="/">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="362.0" layoutY="93.0" text="\\">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="355.0" layoutY="182.0" text="/">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                        <Label layoutX="431.0" layoutY="180.0" text="\\">
+                            <font>
+                                <Font size="37.0" />
+                            </font></Label>
+                    </children>
+                </Pane>
+            </center>
+            <left>
+                <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label />
+                    </children>
+                </VBox>
+            </left>
+        </BorderPane>
+    </children>
+</GridPane>
