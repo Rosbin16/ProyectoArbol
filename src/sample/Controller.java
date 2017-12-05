@@ -1,10 +1,13 @@
 package sample;
 
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 
+import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -13,7 +16,7 @@ public class Controller implements Initializable {
     @FXML
     Label TextLb;
     @FXML
-    Button PreOrdenBtn,InOrdenBtn,PostOrdenBtn,TamañoBtn,MayorBtn,MenorBtn,BuscarBtn;
+    Button PreOrdenBtn, InOrdenBtn, PostOrdenBtn, TamañoBtn, MayorBtn, MenorBtn, BuscarBtn;
 
     MetodosArbol arbol = new MetodosArbol();
 
@@ -40,8 +43,61 @@ public class Controller implements Initializable {
         nodo8.setNodoIzquierdo(nodo7);
         nodo8.setNodoDerecho(nodo6);
         raiz.setNodoDerecho(nodo8);
+
+
+        this.PreOrdenBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                TextLb.setText("Preorden: \n" +arbol.preOrden(raiz));
+                arbol.mensaje();
+            }
+        });
+
+        this.InOrdenBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                TextLb.setText("InOrden:\n "+ arbol.inOrden(raiz));
+                arbol.mensaje();
+            }
+        });
+
+        this.PostOrdenBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                TextLb.setText("PostOrden: \n"+ arbol.postOrden(raiz));
+                arbol.mensaje();
+            }
+        });
+
+        this.TamañoBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                TextLb.setText(arbol.tamaño(raiz));
+            }
+        });
+
+        this.MayorBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                TextLb.setText(arbol.mayor(raiz));
+            }
+        });
+
+        this.MenorBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                TextLb.setText(arbol.menor(raiz));
+            }
+        });
+
+        this.BuscarBtn.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                int num = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el valor a buscar"));
+                TextLb.setText(arbol.buscar(raiz, num));
+                arbol.encontrado=false;
+                arbol.mensaje();
+            }
+        });
     }
-
-
-
 }
