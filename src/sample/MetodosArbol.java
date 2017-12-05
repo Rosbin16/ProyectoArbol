@@ -4,13 +4,9 @@ package sample;
  * Created by Rosbin on 04/12/2017.
  */
 public class MetodosArbol {
-    public class MetodosArbol {
-        private int tamaño=0;
-        int mayor=0;
-        int menor = 9999;
-        boolean encontrado = false;
-        String mensaje = "";
 
+        private int tamaño=0;
+      
         public void mensaje (){
             mensaje="";
         }
@@ -42,6 +38,14 @@ public class MetodosArbol {
             }
             return mensaje;
         }
+        public String tamaño (Nodo raiz){
+            if(raiz != null){
+                tamaño++;
+                tamaño(raiz.getNodoIzquierdo());
+                tamaño(raiz.getNodoDerecho());
+            }
+            return "El tamaño de nodos es : "+ tamaño;
+        }
 
-        
+
     }
