@@ -73,19 +73,5 @@ public class MetodosArbol {
             return "El valor MENOR es: "+ menor;
         }
 
-        public String buscar(Nodo raiz, int  r){
-            if(raiz != null){
-                if (raiz.getDato()==r){
-                    encontrado = true;
-                    mensaje = r + " Encontrado en el arbol";
-                }
-                buscar(raiz.getNodoIzquierdo(),r);
-                buscar(raiz.getNodoDerecho(),r);
-            }
-            if (encontrado == false){
-                mensaje = r + " NO encontrado";
-            }
-            return mensaje;
-        }
 
     }
