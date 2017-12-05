@@ -1,5 +1,6 @@
 package sample;
 
+<<<<<<< HEAD
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -101,3 +102,8 @@ public class Controller implements Initializable {
         });
     }
 }
+=======
+public class Controller {
+
+}
+>>>>>>> rosbin
