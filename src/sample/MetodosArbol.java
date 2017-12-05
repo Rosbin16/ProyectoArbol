@@ -6,7 +6,7 @@ package sample;
 public class MetodosArbol {
 
         private int tamaño=0;
-      
+
         public void mensaje (){
             mensaje="";
         }
