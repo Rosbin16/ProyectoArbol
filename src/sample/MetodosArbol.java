@@ -4,15 +4,12 @@ package sample;
  * Created by Rosbin on 04/12/2017.
  */
 public class MetodosArbol {
-<<<<<<< HEAD
+
     int mayor=0;
     int menor = 9999;
     boolean encontrado = false;
     String mensaje = "";
 
-    public void mensaje (){
-        mensaje="";
-    }
 
     public String mayor(Nodo raiz){
         if(raiz != null){
@@ -49,8 +46,8 @@ public class MetodosArbol {
         }
         return mensaje;
     }
-}
-=======
+
+
 
         private int tamaño=0;
 
@@ -96,4 +93,4 @@ public class MetodosArbol {
 
 
     }
->>>>>>> rosbin
+
