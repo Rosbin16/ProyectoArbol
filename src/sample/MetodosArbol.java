@@ -6,6 +6,12 @@ package sample;
 public class MetodosArbol {
     int mayor=0;
     int menor = 9999;
+    boolean encontrado = false;
+    String mensaje = "";
+
+    public void mensaje (){
+        mensaje="";
+    }
 
     public String mayor(Nodo raiz){
         if(raiz != null){
@@ -28,5 +34,18 @@ public class MetodosArbol {
         }
         return "El valor MENOR es: "+ menor;
     }
-
+    public String buscar(Nodo raiz, int r){
+        if(raiz != null){
+            if (raiz.getDato()==r){
+                encontrado = true;
+                mensaje = r + " Encontrado en el arbol";
+            }
+            buscar(raiz.getNodoIzquierdo(),r);
+            buscar(raiz.getNodoDerecho(),r);
+        }
+        if (encontrado == false){
+            mensaje = r + " NO encontrado";
+        }
+        return mensaje;
+    }
 }
